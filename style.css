@@ -1,0 +1,40 @@
+.bg-kitten {
+
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1570018144715-43110363d70a?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+}
+
+.bg-paws {
+
+    background-size: cover;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/009/656/333/original/ink-dog-paw-cat-paw-grunge-style-vector.jpg);
+
+}
+
+V1 {
+    border-left: 6px blue;
+    height: 500px;
+}
+
+.card {
+    position: relative;
+    top: 5em;
+}
+
+.card-offset-top {
+    margin-top: 5;
+
+}
+
+.card-offset-bottom {
+    margin-bottom: -5;
+}
+
+.brand-font {
+
+    font-family: "Caveat", system-ui;
+
+
+}
