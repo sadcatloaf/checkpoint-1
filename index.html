@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="style.css">
     <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
         defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="debug">
@@ -23,42 +28,55 @@
 
     <header class="container-fluid bg-paws">
 
+        <!--Top Title where nav bars usually are -->
         <div class="row">
-            <!--Top Title where nav bars usually are -->
-            <div class="bg-primary">
+            <div class="bg-light">
                 <div class="">
-                    <h1 class="brand-font"><span class="mdi mdi-cat"></span>CATS! CATS!</h1>
+                    <h1 class="brand-font"><span class="mdi mdi-cat text-primary-emphasis"></span>CATS! CATS!</h1>
                 </div>
             </div>
         </div>
+
         <!-- Input Bar -->
         <section class="row bg-kitten align-items-baseline">
-
             <div class="col py-3 justify-content-center">
-                <div class="sticky-top bg-light shadow p-2 my-3">
-                    <span class="py-3 text=left brand-font">ADOPTION INFO</span>
+                <div class="sticky-top bg-light shadow p-4 my-3">
+                    <span class="py-3 text=left brand-font text-primary">ADOPTION INFO</span>
                     <form>
                         <div class="mb-3">
                             <input type="NAME" class="form-control" id="InputNAME" placeholder="NAME">
                         </div>
+
                         <div class="mb-3">
                             <input type="EMAIL" class="form-control" id="InputEMAIL" placeholder="EMAIL">
                         </div>
+
                         <div class="mb-3">
-                            <input type="PHONE" class="form-control" id="InputPHONE" placeholder="PHONE">
-                            <input type="EXT." class="form-control" id="InputEXT" placeholder="EXT.">
+                            <div class="d-flex">
+                                <input type="PHONE" class="form-control" id="InputPHONE" placeholder="PHONE">
+                                <input type="EXT." class="form-control" id="InputEXT" placeholder="EXT.">
+                            </div>
                         </div>
+
                         <div class="mb-3">
                             <input type="MESSAGE" class="form-control" id="InputMESSAGE" placeholder="MESSAGE">
                         </div>
-                        <div class="my-2">
+
+                        <div class="d-flex text-left">
+                            <div class="">
+                                <input type="checkbox">
+                            </div>
+                            <label for="">by checking this box I agree to the terms of the lorem ipsum dolor</label>
+                        </div>
+
+                        <div class="my-2 py-3">
                             <Button class="btn btn-primary">SUBMIT</Button>
                         </div>
                     </form>
                 </div>
             </div>
             <!-- Text on the right side of Input Bar -->
-            <div class="col-8 text-center">
+            <div class="col-8 text-center brand-font">
                 <div class="">
                     <h1>TAKE A CAT HOME TODAY</h1>
                 </div>
@@ -67,20 +85,21 @@
                 </div>
             </div>
         </section>
+
         <!-- text on bottom left of header -->
         <div class="row justify-content-evenly text-left align-items-center card-offset-bottom brand-font">
-            <div class="col-5 text-danger py-5">
+            <div class="col-5 text-danger py-5 brand-font">
                 <h1>Every purrents toebeans</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident consectetur dolorum
                     error consequuntur, sed quibusdam ad sequi iure iusto illum ipsam inventore nesciunt! Molestiae
                     eligendi repellendus harum exercitationem atque.</p>
             </div>
-            <div class=" col-5 card my- p-3 my-3 ">
-                <h4><span class="mdi mdi-paw"></span>Senior Cats</h4>
-                <h4><span class="mdi mdi-paw"></span>Kittens</h4>
-                <h4><span class="mdi mdi-paw"></span>Young Adult Cats</h4>
-                <h4><span class="mdi mdi-paw"></span>Paired Cats</h4>
-                <h4><span class="mdi mdi-paw"></span>Toys, Foods, Treats</h4>
+            <div class=" col-5 card my- p-4 my-3 ">
+                <h4><span class="mdi mdi-paw text-primary-emphasis"></span>Senior Cats</h4>
+                <h4><span class="mdi mdi-paw text-primary-emphasis"></span>Kittens</h4>
+                <h4><span class="mdi mdi-paw text-primary-emphasis"></span>Young Adult Cats</h4>
+                <h4><span class="mdi mdi-paw text-primary-emphasis"></span>Paired Cats</h4>
+                <h4><span class="mdi mdi-paw text-primary-emphasis"></span>Toys, Foods, Treats</h4>
             </div>
         </div>
     </header>
@@ -88,14 +107,20 @@
 
     <main class="container-fluid">
         <div class="row">
+            <!-- image left side body -->
             <div class="col-5 py-5 bg-light">
                 <img class="img-fluid"
                     src="https://plus.unsplash.com/premium_photo-1677545183884-421157b2da02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2F0fGVufDB8fDB8fHww"
                     alt="Flower Cat">
             </div>
+            <!--Font right side of main page  -->
             <div class="col py-5 my-5 bg-light">
-                <span class="mdi mdi-paw"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ut veniam asperiores vel vitae officiis
+                <div class="d-flex justify-content-center">
+                    <i class="mdi mdi-cat fs-1 text-primary-emphasis"></i>
+                </div>
+                <p class="brand-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ut veniam
+                    asperiores
+                    vel vitae officiis
                     ab
                     numquam quasi corporis, possimus ratione exercitationem. Tenetur doloremque nemo molestias adipisci
                     dolorum dignissimos exercitationem.</p>
@@ -104,19 +129,19 @@
                 </div>
             </div>
         </div>
-
-        <section class="row text-left justify-content-evenly py-5 bg-paws">
-            <div class="col-3 my-4 py-3 bg-light">
+        <!-- Card below main img and paragraph -->
+        <section class="row text-left justify-content-evenly align-items-center py-5 bg-paws brand-font">
+            <div class="col-3 my-4 py-4 bg-light">
                 <div class="relative-card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla
                     nisi repudiandae nihil molestias, inventore illo itaque alias. Possimus, debitis! Aut sunt
                     labore assumenda modi hic, officiis voluptate eligendi minus?</div>
             </div>
-            <div class="col-3 py-4 bg-light">
+            <div class="col-3 my-3 py-5 bg-light">
                 <div class="relative-card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla
                     nisi repudiandae nihil molestias, inventore illo itaque alias. Possimus, debitis! Aut sunt
                     labore assumenda modi hic, officiis voluptate eligendi minus?</div>
             </div>
-            <div class="col-3 my-4 py-3 bg-light">
+            <div class="col-3 my-4 py-4 bg-light">
                 <div class="relative-card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla
                     nisi repudiandae nihil molestias, inventore illo itaque alias. Possimus, debitis! Aut sunt
                     labore assumenda modi hic, officiis voluptate eligendi minus?</div>
