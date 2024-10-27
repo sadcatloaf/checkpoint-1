@@ -56,7 +56,14 @@ V1 {
 
     .relative-card {
         position: relative;
-        top: -1em;
+        top: 8em;
     }
 
+    .card-offset-bottom {
+        margin-top: 6em;
+    }
+
+    .card-offset-top {
+        margin-bottom: -8em;
+    }
 }
