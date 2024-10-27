@@ -50,3 +50,13 @@ V1 {
     min-height: 40dvh;
     background-image: url(https://storage.googleapis.com/support-forums-api/attachment/thread-6243036-16169345230575017474.jpg);
 }
+
+@media screen and (min-width: 768px) {
+
+
+    .relative-card {
+        position: relative;
+        top: -1em;
+    }
+
+}
