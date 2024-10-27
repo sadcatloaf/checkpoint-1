@@ -13,6 +13,12 @@
 
 }
 
+.map {
+
+    background-size: cover;
+    background-image: url(https://media.istockphoto.com/id/1189064346/photo/city-map-with-pin-pointers-3d-rendering-image.jpg?s=2048x2048&w=is&k=20&c=6GWiPp_HcVpUd9HXv6W2MT1aQHrsJws0xG-t9fScrRU=);
+}
+
 V1 {
     border-left: 6px blue;
     height: 500px;
@@ -37,4 +43,10 @@ V1 {
     font-family: "Caveat", system-ui;
 
 
+}
+
+.map {
+    background-size: cover;
+    min-height: 40dvh;
+    background-image: url(https://storage.googleapis.com/support-forums-api/attachment/thread-6243036-16169345230575017474.jpg);
 }
